@@ -10,7 +10,6 @@ CREATE TABLE fuel_tank (
     last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
         ON UPDATE CURRENT_TIMESTAMP
 );
-
 -- Admin Refill History
 CREATE TABLE refill_log (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -35,3 +34,4 @@ INSERT INTO fuel_tank (fuel_type, price_per_liter, available_liters) VALUES
 ('Petrol', 102.50, 500),
 ('Diesel', 92.30, 600),
 ('CNG', 78.00, 300);
+
